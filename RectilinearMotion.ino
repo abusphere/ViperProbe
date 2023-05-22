@@ -1,6 +1,6 @@
 /*
 Remote control file for serpentine motion
-of a snake robot with 12 servos
+of a snake robot with 6 servos
 */
 
 #include <Servo.h>
@@ -13,7 +13,7 @@ void advanceTurnSetPoints(RobotTurnDirection turnDirection, float& horizontalSet
 // This function returns the hardware port number for a given logical servo number (logical servo numbers begin from 0 at the head of the snake and increase down the snake body)
 int getServoPortNumber(int servoNumber)
 {
-  return (13 - servoNumber);
+  return (7 - servoNumber);
 }
 
 // Total number of robot servos
